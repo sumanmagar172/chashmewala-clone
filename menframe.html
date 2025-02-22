@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+  .sunglass-banner {
+    padding: 20px 9%;
+    background-color: #F1ECE4;
+    margin-top: 50px;
+}
+.imgWrapper img {
+    width: 300px;
+    height: 250px;
+}
+.content {
+    margin-top: 20px;
+}
+.content p {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.card {
+    width: 300px;
+    height: 340px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+    margin-bottom: 40px;
+  }
+  .card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    height: 216px;
+  }
+  .product-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .product-list .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 500;
+  }
+  .product-list .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    color: #00535E;
+  }
+  .img-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00535e;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+  }
+  .img-btn:hover {
+    background-color: #ffcc43;
+  }
+  #product-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 80px;
+  }
+</style>
+<body onload="fun2()">
+  <header class="header">
+    <a href=""><img src="https://chashmewala.co.in/public/front/image/logo1.png" height="50"></a>
+
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <div class="drop">
+          <li><a href="">Service <i class="fa-solid fa-caret-down"></i></a></li>
+          <div class="dropdown">
+            <p><a href="sunglass.html">SUNGLASS</a></p>
+            <p><a href="menframe.html">MEN FRAME</a></p>
+            <p><a href="lence.html">LENSES</a></p>
+            <p><a href="womenframe.html">WOMEN FRAMES</a></p>
+            <p><a href="power.html">POWER SUNGLASS</a></p>
+            <p><a href="check.html">EYE CHECKUP</a></p>
+          </div>
+      </div>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <button class="appoint">Appointment</button>
+        <i class="fas fa-bars" id="icon"></i>
+    </div>
+</header>
+
+
+      <div class="about-web">
+        <a href="">Home ></a>
+        <a href="">Services ></a>
+        <a href="">MENFRAMES</a>
+      </div>
+
+      <section class="sunglass-banner">
+        <div class="about-img">
+           
+            <div class="contentWrapper">
+                <div class="imgWrapper">
+                    <img src="1686746425.jpg" alt="">
+                </div>
+                <div class="content">
+                <p>
+                    Experience the difference between exceptional eyeglasses at ChashmeWala. Visit us today to explore our collection, receive a comprehensive eye exam, and receive personalized assistance from our friendly staff. Let us help you find the perfect pair of eyeglasses that not only enhance your vision but also reflect your unique style and personality.
+                </p>
+            </div>
+            </div>
+        </div>
+
+      </section>
+      <section class="product">
+        <div id="product-container">
+        </div>
+      </section>
+    
+      <br>
+<br>
+<section class="footer">
+  <div class="footer-links">
+    <p> © copyright @ 2024 by OnNextweb</p>
+    <a href="about.html">About Us | </a>
+    <a href="">Services | </a>
+    <a href="product.html">Products | </a>
+    <a href="">Contact Us</a>
+  </div>
+</section>
+<script src="script.js"></script>
+</body>
+</html>

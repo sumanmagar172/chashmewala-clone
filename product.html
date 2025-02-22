@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+      .card {
+    width: 300px;
+    height: 340px;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 25%);
+    margin-bottom: 40px;
+  }
+  .card img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 12px;
+    object-fit: contain;
+    height: 216px;
+  }
+  .product-list {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .product-list .name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: 'Roboto';
+    font-weight: 500;
+  }
+  .product-list .price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    color: #00535E;
+  }
+  .img-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 250px;
+    border-radius: 5px;
+    color: white;
+    background-color: #00535e;
+    text-decoration: none;
+    margin-left: 25px;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+  }
+  .img-btn:hover {
+    background-color: #ffcc43;
+  }
+  #product-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+    </style>
+</head>
+<body onload="fun()">
+  <header class="header">
+    <a href=""><img src="https://chashmewala.co.in/public/front/image/logo1.png" height="50"></a>
+
+    <ul class="navlist">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="product.html">Product</a></li>
+        <div class="drop">
+          <li><a href="">Service <i class="fa-solid fa-caret-down"></i></a></li>
+          <div class="dropdown">
+            <p><a href="sunglass.html">SUNGLASS</a></p>
+            <p><a href="menframe.html">MEN FRAME</a></p>
+            <p><a href="lence.html">LENSES</a></p>
+            <p><a href="womenframe.html">WOMEN FRAMES</a></p>
+            <p><a href="power.html">POWER SUNGLASS</a></p>
+            <p><a href="check.html">EYE CHECKUP</a></p>
+          </div>
+      </div>
+        <li><a href="">Contact Us</a></li>
+    </ul>
+
+    <div class="nav-right">
+        <button class="appoint">Appointment</button>
+        <i class="fas fa-bars" id="icon"></i>
+    </div>
+</header>
+      <div class="about-web">
+        <a href="">Home ></a>
+        <a href="">Product</a>
+      </div>
+      <section class="product">
+      <h1 class="heading">Our Products</h1>
+      <div id="product-container">
+      </div>
+    </section>
+   
+    <br>
+    <br>
+    <section class="footer">
+      <div class="footer-links">
+        <p> © copyright @ 2024 by OnNextweb</p>
+        <a href="about.html">About Us | </a>
+        <a href="">Services | </a>
+        <a href="product.html">Products | </a>
+        <a href="">Contact Us</a>
+      </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
